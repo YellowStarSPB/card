@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 400;
+    color: #0d0d0d;
+    line-height: 24px;
+}
+
+body {
+    background: #e5e5e5;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-card {
+    background: #fff;
+    border-radius: 16px;
+    margin: auto auto;
+    max-width: 640px;
+}
+.news-card__wrapper {
+    padding: 16px;
+}
+.news-card__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.news-card__rate-block {
+    display: flex;
+    align-items: center;
+}
+.news-card__rate-img {
+    margin-right: 4px;
+}
+.news-card__rate-text {
+    font-weight: 500;
+    margin-right: 16px;
+    transition: all 0.3s ease-in-out;
+}
+.news-card__rate-text:hover {
+    cursor: url(./assets/cursor.svg), auto;
+    color: #5e6978;
+}
+.news-card__company-name {
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+.news-card__company-name:hover {
+    cursor: url(./assets/cursor.svg), auto;
+    color: #5e6978;
+}
+.news-card__date {
+    color: #5e656e;
+}
+.news-card__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 32px;
+}
+.news-card__subtitle {
+    font-size: 18px;
+    line-height: 25px;
+}
+.news-card__main-img {
+    width: 100%;
+    height: 400px;
+}
+.news-card__main-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.news-card__social-box {
+    padding: 20px;
+    display: flex;
+    gap: 24px;
+}
+.news-card__social-box button {
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #5e656e;
+    transition: all 0.3s ease-in-out;
+}
+.news-card__social-box button img {
+    transition: all 0.3s ease-in-out;
+    opacity: 0.5;
+}
+.news-card__like-btn {
+    gap: 4px;
+}
+.news-card__comment-btn {
+    gap: 4px;
+}
+.news-card__social-box button:hover > img {
+    opacity: 1;
+}
+.news-card__social-box button:hover {
+    color: #0c0d0f;
+    cursor: url(./assets/cursor.svg), auto;
+}
+
+.news-card__social-box img:hover {
+    opacity: 1;
+}
+@media screen and (max-width: 450px) {
+    .news-card__company-name {
+        display: none;
+    }
+}
